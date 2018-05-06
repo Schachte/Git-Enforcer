@@ -3,6 +3,10 @@
   <img src="https://i.imgur.com/3Cw90Gl.png"/>
 </p>
 
+---------
+
+### Currently Under Development
+
 # Git Polizei
 > GitHub Bot For Validating Pull Request Structure To Maintain Quality Codebases 
 
