@@ -8,7 +8,7 @@
 ### Currently Under Development
 
 # Git Polizei
-> GitHub bot for validating pull request structure, ensuring approval requests don't go stale, kicking off builds, automating issue labels and more. 
+> GitHub bot for validating pull request structure, ensuring approval requests don't go stale, kicking off builds, automating issue labels, setting up CRON tasks, issuing reminders and more!
 
 
 ## Current Roadmap:
@@ -23,6 +23,9 @@
 - Roll-Your-Own capabilities
 - Verifying Milestones were Attached to PR
 - Verifying Issue Number was Linked in PR
+- Kick off Travis.CI builds
+- Add labels for stale PR's 
+- Sending reminders with parse and PB-Scheduler
  
 ## Setup
 
