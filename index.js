@@ -13,8 +13,9 @@ module.exports = (robot) => {
       'pull_request.labeled',
       'pull_request.unlabeled',
       'pull_request.synchronize'
-    ]
-  ), (context) => { Handler.handlePullRequestEvent(context) }
+    ],
+    (context) => { Handler.handlePullRequestEvent(context) }
+  )
 
   /**
     Handle Issue Specific Events
@@ -24,6 +25,7 @@ module.exports = (robot) => {
       'issues.demilestoned',
       'issues.renamed',
       'issues.opened',
-    ]
-  ), (context) => { Handler.handleIssueEvent(context) }
+    ],
+    (context) => { Handler.handleIssueEvent(context) }
+  )
 };
