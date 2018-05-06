@@ -17,6 +17,8 @@
 - Validating the number of approvals to enable mergability
 - Adding SMS config via Twilio API for customizable webhooks
 - Roll-Your-Own capabilities
+- Verifying Milestones were Attached to PR
+- Verifying Issue Number was Linked in PR
  
 ## Setup
 
