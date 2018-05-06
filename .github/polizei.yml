@@ -1,0 +1,26 @@
+#############################################################################
+#                      POLIZEI RULE FILE GUIDELINES
+#############################################################################
+#
+# This is a sample YML file for structuring your PR mergability requirements
+# Any any time you want to ignore a particular rule, write null or delete the
+# entirely.
+#
+# approvals: Any integer value that represents the no. of required approvers.
+# title_must_contain: Regex rule that needs to contain string, pipe delimiter
+# title_must_not_contain: Regex rule that must not contain string, pipe delimiter
+# title_must_be_prefixed: Prefix requirement for PR title
+# title_must_be_suffixed: Suffix requirement for PR title
+# commit_must_be_prefixed: Prefix requirement for PR (individual commits)
+# commit_must_be_suffixed: Suffix requirement for PR (individual commits)
+#############################################################################
+
+# Here is an example polizei policy:
+polizei:
+  approvals: 3
+  title_must_contain: POL-
+  title_must_not_contain: WIP|wip
+  title_must_be_prefixed: POL-
+  title_must_be_suffixed: null
+  commits_must_be_prefixed: POL-
+  commits_must_be_suffixed: null
