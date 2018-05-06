@@ -1,5 +1,10 @@
+
+<p align="center">
+  <img src="https://i.imgur.com/3Cw90Gl.png"/>
+</p>
+
 # Git Polizei
-GitHub Bot For Validating Pull Request Structure To Maintain Quality Codebases 
+> GitHub Bot For Validating Pull Request Structure To Maintain Quality Codebases 
 
 
 ## Current Roadmap:
