@@ -8,7 +8,7 @@
 ### Currently Under Development
 
 # Git Polizei
-> GitHub Bot For Validating Pull Request Structure To Maintain Quality Codebases 
+> GitHub bot for validating pull request structure, ensuring approval requests don't go stale, kicking off builds, automating issue labels and more. 
 
 
 ## Current Roadmap:
