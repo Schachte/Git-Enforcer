@@ -19,7 +19,7 @@
 polizei:
   approvals: 3
   title_must_contain: POL-
-  title_must_not_contain: WIP|wip
+  title_must_not_contain: WIP | wip
   title_must_be_prefixed: POL-
   title_must_be_suffixed: null
   commits_must_be_prefixed: POL-
