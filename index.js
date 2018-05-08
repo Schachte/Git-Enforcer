@@ -1,5 +1,5 @@
 const Handler = require('./lib/handler');
-const EventRegistrar = require('lib/event_registrar');
+const EventRegistrar = require('./lib/event_registrar');
 
 
 let prEvents = [
