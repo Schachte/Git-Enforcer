@@ -1,7 +1,6 @@
 const Handler = require('./lib/handler');
 const EventRegistrar = require('./lib/event_registrar');
 
-
 let prEvents = [
   'pull_request.opened',
   'pull_request.edited',
