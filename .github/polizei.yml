@@ -13,6 +13,7 @@
 # title_must_be_suffixed: Suffix requirement for PR title
 # commit_must_be_prefixed: Prefix requirement for PR (individual commits)
 # commit_must_be_suffixed: Suffix requirement for PR (individual commits)
+# validate_label_population: Ensures that labels must be added to an opened issue
 #############################################################################
 
 # Here is an example polizei policy:
@@ -24,3 +25,6 @@ polizei:
   title_must_be_suffixed: null
   commits_must_be_prefixed: POL-
   commits_must_be_suffixed: null
+  validate_label_population: true
+    message: "You must add a relevant label to this Git Polizei issue, or else it will be closed within 10 minutes."
+    minutes_until_close: 10
