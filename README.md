@@ -5,9 +5,11 @@
 
 ---------
 
-### Currently Under Development
-
-[Click Here To Install!](https://github.com/apps/git-polizei)
+<p align="center">
+  <a href="">
+    <img src="https://i.imgur.com/0n2G4WX.png"/>
+  </a>
+</p>
 
 # Git Enforcer Bot
 > GitHub bot for validating pull request structure, ensuring approval requests don't go stale, kicking off builds, automating issue labels, setting up CRON tasks, issuing reminders and more!
