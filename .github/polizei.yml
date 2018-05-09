@@ -26,6 +26,5 @@ polizei:
   commits_must_be_prefixed: POL-
   commits_must_be_suffixed: null
   validate_label_population:
-    enabled: true
-    message: "You must add a relevant label to this Git Polizei issue, or else it will be closed within 10 minutes."
-    minutes_until_close: 10
+    enabled:  true
+    message: "Please add >= 1 issue label to better organize repo issues."

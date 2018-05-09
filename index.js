@@ -29,6 +29,6 @@ module.exports = (robot) => {
 /** Issues */
   robot.on(
     issueEvents,
-    (context) => { console.log("CALLED"); Handler.handleIssueEvents(context) }
+    (context) => { Handler.handleIssueEvents(context) }
   )
 };
