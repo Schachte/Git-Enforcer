@@ -7,6 +7,8 @@
 
 ### Currently Under Development
 
+[https://github.com/apps/git-polizei](Click Here To Install!)
+
 # Git Polizei
 > GitHub bot for validating pull request structure, ensuring approval requests don't go stale, kicking off builds, automating issue labels, setting up CRON tasks, issuing reminders and more!
 
