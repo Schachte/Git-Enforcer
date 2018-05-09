@@ -26,5 +26,5 @@ polizei:
   commits_must_be_prefixed: POL-
   commits_must_be_suffixed: null
   validate_label_population:
-    enabled: false
+    enabled: true
     message: "Don't create issues with no labels!"
