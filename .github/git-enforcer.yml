@@ -17,14 +17,50 @@
 #############################################################################
 
 # Here is an example git-enforcer policy:
+# All settings can be saved, but toggling the enabled flag will conditionally
+# shut them off 1 by 1.
 git-enforcer:
-  approvals: 3
-  title_must_contain: POL-
-  title_must_not_contain: WIP | wip
-  title_must_be_prefixed: POL-
-  title_must_be_suffixed: null
-  commits_must_be_prefixed: POL-
-  commits_must_be_suffixed: null
-  validate_label_population:
-    enabled: true
-    message: "Don't create issues with no labels!"
+  labels:
+    title_must_contain:
+      enabled: true
+      pattern: null
+    title_must_not_contain:
+      enabled: true
+      pattern: null
+    title_must_be_prefixed:
+      enabled: true
+      prefix: "[GIT-ENFORCE]"
+    title_must_be_suffixed:
+      enabled: true
+      suffix: SUFFIX
+    commits_must_be_prefixed:
+      enabled: true
+      prefix: null
+    commits_must_be_suffixed:
+      enabled: true
+      suffix: null
+    validate_label_population:
+      enabled: true
+      message: "Don't create issues with no labels!"
+  pull_requests:
+    approvals:
+      enabled: true
+      number: 0
+    title_must_contain:
+      enabled: true
+      pattern: null
+    title_must_not_contain:
+      enabled: true
+      pattern: null
+    title_must_be_prefixed:
+      enabled: true
+      prefix: null
+    title_must_be_suffixed:
+      enabled: true
+      suffix: null
+    commits_must_be_prefixed:
+      enabled: true
+      prefix: null
+    commits_must_be_suffixed:
+      enabled: true
+      suffix: null
