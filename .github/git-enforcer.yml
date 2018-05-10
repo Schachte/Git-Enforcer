@@ -1,5 +1,5 @@
 #############################################################################
-#                      POLIZEI RULE FILE GUIDELINES
+#                      GIT-ENFORCER RULE FILE GUIDELINES
 #############################################################################
 #
 # This is a sample YML file for structuring your PR mergability requirements
@@ -16,8 +16,8 @@
 # validate_label_population: Ensures that labels must be added to an opened issue
 #############################################################################
 
-# Here is an example polizei policy:
-polizei:
+# Here is an example git-enforcer policy:
+git-enforcer:
   approvals: 3
   title_must_contain: POL-
   title_must_not_contain: WIP | wip
