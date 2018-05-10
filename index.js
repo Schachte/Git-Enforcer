@@ -1,4 +1,4 @@
-const Handler = require('./lib/handler');
+const Handler = require('./lib/handler')
 
 let prEvents = [
   'pull_request.opened',
@@ -19,7 +19,6 @@ let issueEvents = [
 ]
 
 module.exports = (robot) => {
-
 /** Pull Requests */
   robot.on(
     prEvents,
@@ -31,4 +30,4 @@ module.exports = (robot) => {
     issueEvents,
     (context) => { Handler.handleIssueEvents(context) }
   )
-};
+}

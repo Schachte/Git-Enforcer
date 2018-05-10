@@ -1,10 +1,10 @@
 {
-  "name": "git-polizei",
+  "name": "git-enforcer",
   "version": "1.0.0",
   "description": "",
   "author": "Ryan Schachte <code@ryan-schachte.com> (http://ryan-schachte.com)",
   "license": "ISC",
-  "repository": "https://github.com/Schachte/git-polizei.git",
+  "repository": "https://github.com/Schachte/git-enforcer.git",
   "scripts": {
     "dev": "nodemon --exec \"npm start\"",
     "start": "probot run ./index.js",
@@ -15,6 +15,7 @@
   "dependencies": {
     "js-yaml": "^3.11.0",
     "log4js": "^2.5.3",
+    "logger": "0.0.1",
     "probot": "^6.0.0"
   },
   "devDependencies": {
