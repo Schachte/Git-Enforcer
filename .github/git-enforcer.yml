@@ -43,9 +43,6 @@ git-enforcer:
     milestone_required:
       message: "A milestone is required to be selected when making a new issue"
       required_milestone_name: null
-    project_required:
-      message: "A project is required to be selected when making a new issue"
-      required_project_name: null
   pull_requests:
     approvals:
       number: 0
