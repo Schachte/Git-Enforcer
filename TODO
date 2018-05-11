@@ -4,8 +4,44 @@
 
 ☐ Need to disable the way that enable is used from the config  @timestamp(2018-05-11 15:35)
     ✔ Update the YML config to remove the enabled flag @timestamp(2018-05-11 15:43) @done(2018-05-11 15:43)
-    ☐ Update the issue handler class to removed enabled references @timestamp(2018-05-11 15:43)
+    ✔ Update the issue handler class to removed enabled references @timestamp(2018-05-11 15:43) @done(2018-05-11 16:11)
 ☐ Add better error handling to process valid YML config within the loader class @timestamp(2018-05-11 15:47)
 ☐ Add the ability to load defaults in the config to better protect against failures @timestamp(2018-05-11 15:47)
 ☐ Need to remove the project stuff from the config  @timestamp(2018-05-11 15:35)
 ☐ Need to add unit and integration tests for the config as well as the actual issues @timestamp(2018-05-11 15:36)
+
+--------------------------------------------------------------
+                Things that need to be tested
+--------------------------------------------------------------
+
+# Each section is labelled by the class name
+
+Configuration:
+  handleCurrentInstanceContext
+  ☐ Add check for null context @timestamp(2018-05-11 16:13)
+  ☐ Add check to see if the requested file exists within the user repo @timestamp(2018-05-11 16:13)
+  ☐ Test to ensure that a new instance of the Configuration class was created @timestamp(2018-05-11 16:14)
+  ☐ Test to ensure the class was instantiated with a valid settings object @timestamp(2018-05-11 16:15)
+  ☐ Test to check that the constants are set correctly within the class @timestamp(2018-05-11 16:15)
+  ☐ Test to ensure an error is thrown with the settings is undefined @timestamp(2018-05-11 16:16)
+  ☐ Test to ensure the YML file can be loaded properly and throws otherwise @timestamp(2018-05-11 16:16)
+
+  util
+  ☐ Test to ensure that the issue message interpolates input string correctly @timestamp(2018-05-11 16:17)
+  ☐ Test to ensure isUndefined can properly evaluate different input types @timestamp(2018-05-11 16:17)
+
+  handler
+  ☐ Test to ensure that handleIssueEvents gets proper config and instantiates IssueHandler  @timestamp(2018-05-11 16:18)
+  # Ignore pull requests for now as they are not implemented
+
+  IssueHandler
+  ☐ this.validateMilestoneAssignment(), @timestamp(2018-05-11 16:20)
+  ☐ this.validateLabelPopulation(), @timestamp(2018-05-11 16:20)
+  ☐ this.validateTitlePrefix(), @timestamp(2018-05-11 16:20)
+  ☐ this.validateTitleSuffix(), @timestamp(2018-05-11 16:20)
+  ☐ this.validateAsigneePopulation() @timestamp(2018-05-11 16:20)
+  ☐ appendStatusMessage @timestamp(2018-05-11 16:20)
+  ☐ executeGitCommentCreation @timestamp(2018-05-11 16:20)
+
+  index
+  ☐ Ensure that the proper events cause a trigger within the program @timestamp(2018-05-11 16:20)
