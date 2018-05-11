@@ -1,0 +1,8 @@
+ToDo, Tech-Debt & Shit
+--------------------------------------------------------------
+
+☐ Need to disable the way that enable is used from the config  @timestamp(2018-05-11 15:35)
+    ✔ Update the YML config to remove the enabled flag @timestamp(2018-05-11 15:43) @done(2018-05-11 15:43)
+    ☐ Update the issue handler class to removed enabled references @timestamp(2018-05-11 15:43)
+☐ Need to remove the project stuff from the config  @timestamp(2018-05-11 15:35)
+☐ Need to add unit and integration tests for the config as well as the actual issues @timestamp(2018-05-11 15:36)

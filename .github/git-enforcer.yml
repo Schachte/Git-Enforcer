@@ -2,10 +2,15 @@
 #                      GIT-ENFORCER RULE FILE GUIDELINES
 #############################################################################
 #
-# This is a sample YML file for structuring your PR mergability requirements
-# Any any time you want to ignore a particular rule, write null or delete the
-# entirely.
+# This is a sample YML file for structuring your PR mergability requirements and
+# issues that are created within your repository or organization.
 #
+# Any any time you want to ignore a particular rule, comment it out or don't add
+# it into the file.
+#
+# ------------------------------------------------------------------------
+# BELOW IS THE LIST OF AVAILABLE RULE DEFINITIONS THAT CAN BE DEFINED:
+# ------------------------------------------------------------------------
 # approvals: Any integer value that represents the no. of required approvers.
 # title_must_contain: Regex rule that needs to contain string, pipe delimiter
 # title_must_not_contain: Regex rule that must not contain string, pipe delimiter
@@ -16,60 +21,42 @@
 # validate_label_population: Ensures that labels must be added to an opened issue
 #############################################################################
 
-# Here is an example git-enforcer policy:
-# All settings can be saved, but toggling the enabled flag will conditionally
-# shut them off 1 by 1.
+# Here is an example git-enforcer policy. A more detailed policy guide can be
+# found within the GitHub readme.
 git-enforcer:
   labels:
     add_label_on_failure:
-      enabled: true
       color: "FFA500"
       name: "Issue Failure"
     title_must_contain:
-      enabled: true
       pattern: null
     title_must_not_contain:
-      enabled: true
       pattern: null
     title_must_be_prefixed:
-      enabled: true
       prefix: "[GIT-ENFORCE]"
     title_must_be_suffixed:
-      enabled: true
       suffix: SUFFIX
     validate_label_population:
-      enabled: true
       message: "Don't create issues with no labels!"
     validate_assignee_population:
-      enabled: true
       message: "Remember to choose at least one assignee to this issue!"
     milestone_required:
-      enabled: true
       message: "A milestone is required to be selected when making a new issue"
       required_milestone_name: null
     project_required:
-      enabled: true
       message: "A project is required to be selected when making a new issue"
       required_project_name: null
   pull_requests:
     approvals:
-      enabled: true
       number: 0
     title_must_contain:
-      enabled: true
       pattern: null
     title_must_not_contain:
-      enabled: true
       pattern: null
     title_must_be_prefixed:
-      enabled: true
       prefix: null
-    title_must_be_suffixed:
-      enabled: true
       suffix: null
     commits_must_be_prefixed:
-      enabled: true
       prefix: null
     commits_must_be_suffixed:
-      enabled: true
       suffix: null
