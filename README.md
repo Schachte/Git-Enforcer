@@ -8,7 +8,12 @@
   <a href="https://github.com/apps/git-enforcer">
     <img src="https://i.imgur.com/0n2G4WX.png"/>
   </a>
+  
+  [![Waffle.io - Columns and their card count](https://badge.waffle.io/Schachte/Git-Enforcer.svg?columns=all)](https://waffle.io/Schachte/Git-Enforcer)
+
 </p>
+
+
 
 > GitHub bot for validating pull request structure, ensuring approval requests don't go stale, kicking off builds, automating issue labels, setting up CRON tasks, issuing reminders and more!
 
