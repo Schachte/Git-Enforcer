@@ -12,11 +12,34 @@
 
 > GitHub bot for validating pull request structure, ensuring approval requests don't go stale, kicking off builds, automating issue labels, setting up CRON tasks, issuing reminders and more!
 
+#### Table of Contents: 
+
+- [Issues Validation Support](#issues-validation-support)
+- [Pull Request Validation Support](#pull-request-validation-support)
+- [Example Configuration .yml](#example-configuration-yml)
+- [Current Roadmap](#current-roadmap)
+- [Setup](#setup)
+
 
 ![](https://img.shields.io/badge/GitEnforcer-v0.0.1-green.svg)
 [![Waffle.io - Columns and their card count](https://badge.waffle.io/Schachte/Git-Enforcer.svg?columns=all)](https://waffle.io/Schachte/Git-Enforcer)
+
+## Issues Validation Support
+
+Currently, the following things are supported for issues:
+
+| Feature        | Description           | Config Mapping  |
+| ------------- |:-------------:| -----:|
+| Issue Title Prefix Check      | Enforcing that an issue title must be prepended with a user-specified string | title_must_be_prefixed |
+| Issue Title Suffix Check      | Enforcing that an issue title must be appended with a user-specified string      |   title_must_be_suffixed |
+| Required Issue Labelling | Requires new issues to have at least N (user-specified) amount of labels      |    validate_label_population |
+
+
+## Pull Request Validation Support
+
+> TBD
     
-## Example Configuration .yml: 
+## Example Configuration .yml
 
 The configuration for Git-Enforcer is _extremely_ customizable. As a result, the config file is quite large. Not everything needs to be used or enabled, however, you can freely toggle things on and off through the file place in the `.github/git-enforcer.yml` location of your repo. 
 
@@ -89,18 +112,8 @@ git-enforcer:
       suffix: null
 ```
 
-## Issues Support:
 
-Currently, the following things are supported for issues:
-
-| Feature        | Description           | Config Mapping  |
-| ------------- |:-------------:| -----:|
-| Issue Title Prefix Check      | Enforcing that an issue title must be prepended with a user-specified string | title_must_be_prefixed |
-| Issue Title Suffix Check      | Enforcing that an issue title must be appended with a user-specified string      |   title_must_be_suffixed |
-| Required Issue Labelling | Requires new issues to have at least N (user-specified) amount of labels      |    validate_label_population |
-
-
-## Current Roadmap:
+## Current Roadmap
 - Validating structure of pull request titles (prefix/suffix)
   - i.e (ENFORCR-45: Adding webhooks for author notifications)
 - Validating structure of individual commit messages (prefix/suffix)
