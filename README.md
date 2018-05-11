@@ -33,6 +33,9 @@ Currently, the following things are supported for issues:
 | Issue Title Prefix Check      | Enforcing that an issue title must be prepended with a user-specified string | title_must_be_prefixed |
 | Issue Title Suffix Check      | Enforcing that an issue title must be appended with a user-specified string      |   title_must_be_suffixed |
 | Required Issue Labelling | Requires new issues to have at least N (user-specified) amount of labels      |    validate_label_population |
+| Auto Label On Failure | Will auto-label issues that fail spot-check      |    tbd |
+| Milestone Checker Verification | Verfifies issues assigned a milestone or a particular milestone      |    tbd |
+| Assignee Checker Vericiation | Verfifies an assignee has been added to a particular milestone      |    tbd |
 
 
 ## Pull Request Validation Support
