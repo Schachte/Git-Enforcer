@@ -12,8 +12,6 @@ let prEvents = [
 ]
 
 let issueEvents = [
-  'issues.milestoned',
-  'issues.demilestoned',
   'issues.renamed',
   'issues.opened'
 ]

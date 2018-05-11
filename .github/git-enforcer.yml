@@ -33,15 +33,16 @@ git-enforcer:
     title_must_be_suffixed:
       enabled: true
       suffix: SUFFIX
-    commits_must_be_prefixed:
-      enabled: true
-      prefix: null
-    commits_must_be_suffixed:
-      enabled: true
-      suffix: null
     validate_label_population:
       enabled: true
       message: "Don't create issues with no labels!"
+    validate_assignee_population:
+      enabled: true
+      message: "Remember to choose at least one assignee to this issue!"
+    milestone_required:
+      enabled: true
+      message: "A milestone is required to be selected when making a new issue"
+      required_milestone_name: null
   pull_requests:
     approvals:
       enabled: true
