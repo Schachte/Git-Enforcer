@@ -21,6 +21,10 @@
 # shut them off 1 by 1.
 git-enforcer:
   labels:
+    add_label_on_failure:
+      enabled: true
+      color: "FFA500"
+      name: "Issue Failure"
     title_must_contain:
       enabled: true
       pattern: null
@@ -43,6 +47,10 @@ git-enforcer:
       enabled: true
       message: "A milestone is required to be selected when making a new issue"
       required_milestone_name: null
+    project_required:
+      enabled: true
+      message: "A project is required to be selected when making a new issue"
+      required_project_name: null
   pull_requests:
     approvals:
       enabled: true
