@@ -16,7 +16,88 @@
 ![](https://img.shields.io/badge/GitEnforcer-v0.0.1-green.svg)
 [![Waffle.io - Columns and their card count](https://badge.waffle.io/Schachte/Git-Enforcer.svg?columns=all)](https://waffle.io/Schachte/Git-Enforcer)
     
+## Example Configuration .yml: 
 
+The configuration for Git-Enforcer is _extremely_ customizable. As a result, the config file is quite large. Not everything needs to be used or enabled, however, you can freely toggle things on and off through the file place in the `.github/git-enforcer.yml` location of your repo. 
+
+```
+#############################################################################
+#                      GIT-ENFORCER RULE FILE GUIDELINES
+#############################################################################
+#
+# This is a sample YML file for structuring your PR mergability requirements
+# Any any time you want to ignore a particular rule, write null or delete the
+# entirely.
+#
+# approvals: Any integer value that represents the no. of required approvers.
+# title_must_contain: Regex rule that needs to contain string, pipe delimiter
+# title_must_not_contain: Regex rule that must not contain string, pipe delimiter
+# title_must_be_prefixed: Prefix requirement for PR title
+# title_must_be_suffixed: Suffix requirement for PR title
+# commit_must_be_prefixed: Prefix requirement for PR (individual commits)
+# commit_must_be_suffixed: Suffix requirement for PR (individual commits)
+# validate_label_population: Ensures that labels must be added to an opened issue
+#############################################################################
+
+# Here is an example git-enforcer policy:
+# All settings can be saved, but toggling the enabled flag will conditionally
+# shut them off 1 by 1.
+git-enforcer:
+  labels:
+    title_must_contain:
+      enabled: true
+      pattern: null
+    title_must_not_contain:
+      enabled: true
+      pattern: null
+    title_must_be_prefixed:
+      enabled: true
+      prefix: "[GIT-ENFORCE]"
+    title_must_be_suffixed:
+      enabled: true
+      suffix: SUFFIX
+    commits_must_be_prefixed:
+      enabled: true
+      prefix: null
+    commits_must_be_suffixed:
+      enabled: true
+      suffix: null
+    validate_label_population:
+      enabled: true
+      message: "Don't create issues with no labels!"
+  pull_requests:
+    approvals:
+      enabled: true
+      number: 0
+    title_must_contain:
+      enabled: true
+      pattern: null
+    title_must_not_contain:
+      enabled: true
+      pattern: null
+    title_must_be_prefixed:
+      enabled: true
+      prefix: null
+    title_must_be_suffixed:
+      enabled: true
+      suffix: null
+    commits_must_be_prefixed:
+      enabled: true
+      prefix: null
+    commits_must_be_suffixed:
+      enabled: true
+      suffix: null
+```
+
+## Issues Support:
+
+Currently, the following things are supported for issues:
+
+| Feature        | Description           | Config Mapping  |
+| ------------- |:-------------:| -----:|
+| Issue Title Prefix Check      | Enforcing that an issue title must be prepended with a user-specified string | title_must_be_prefixed |
+| Issue Title Suffix Check      | Enforcing that an issue title must be appended with a user-specified string      |   title_must_be_suffixed |
+| Required Issue Labelling | Requires new issues to have at least N (user-specified) amount of labels      |    validate_label_population |
 
 
 ## Current Roadmap:
