@@ -10,6 +10,9 @@
   </a>
 </p>
 
+![](https://img.shields.io/badge/GitEnforcer-v0.0.1-green.svg)
+[![Waffle.io - Columns and their card count](https://badge.waffle.io/Schachte/Git-Enforcer.svg?columns=all)](https://waffle.io/Schachte/Git-Enforcer)
+
 > GitHub bot for validating pull request structure, ensuring approval requests don't go stale, kicking off builds, automating issue labels, setting up CRON tasks, issuing reminders and more!
 
 #### Table of Contents: 
@@ -20,9 +23,6 @@
 - [Current Roadmap](#current-roadmap)
 - [Setup](#setup)
 
-
-![](https://img.shields.io/badge/GitEnforcer-v0.0.1-green.svg)
-[![Waffle.io - Columns and their card count](https://badge.waffle.io/Schachte/Git-Enforcer.svg?columns=all)](https://waffle.io/Schachte/Git-Enforcer)
 
 ## Issues Validation Support
 
