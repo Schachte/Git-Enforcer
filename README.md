@@ -25,7 +25,7 @@
 - [Setup](#setup)
 
 ## Example Issue Validation Analysis
-![](https://i.imgur.com/8WYnx0A.png)
+![](https://i.imgur.com/Glqiyrv.png)
 
 ## Issues Validation Support
 
