@@ -17,12 +17,15 @@
 
 #### Table of Contents: 
 
+- [Example Issue Validation Analysis](#example-issue-validation-analysis)
 - [Issues Validation Support](#issues-validation-support)
 - [Pull Request Validation Support](#pull-request-validation-support)
 - [Example Configuration .yml](#example-configuration-yml)
 - [Current Roadmap](#current-roadmap)
 - [Setup](#setup)
 
+## Example Issue Validation Analysis
+![](https://i.imgur.com/8WYnx0A.png)
 
 ## Issues Validation Support
 
