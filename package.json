@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "js-yaml": "^3.11.0",
+    "json-groupby": "^1.1.0",
     "log4js": "^2.5.3",
     "logger": "0.0.1",
     "probot": "^6.0.0"
