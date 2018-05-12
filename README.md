@@ -51,68 +51,78 @@ The configuration for Git-Enforcer is _extremely_ customizable. As a result, the
 #                      GIT-ENFORCER RULE FILE GUIDELINES
 #############################################################################
 #
-# This is a sample YML file for structuring your PR mergability requirements
-# Any any time you want to ignore a particular rule, write null or delete the
-# entirely.
+# This is a sample YML file for structuring your PR mergability requirements and
+# issues that are created within your repository or organization.
 #
-# approvals: Any integer value that represents the no. of required approvers.
-# title_must_contain: Regex rule that needs to contain string, pipe delimiter
-# title_must_not_contain: Regex rule that must not contain string, pipe delimiter
-# title_must_be_prefixed: Prefix requirement for PR title
-# title_must_be_suffixed: Suffix requirement for PR title
-# commit_must_be_prefixed: Prefix requirement for PR (individual commits)
-# commit_must_be_suffixed: Suffix requirement for PR (individual commits)
-# validate_label_population: Ensures that labels must be added to an opened issue
+# Any any time you want to ignore a particular rule, comment it out or don't add
+# it into the file.
+#
+# ------------------------------------------------------------------------
+# BELOW IS THE LIST OF AVAILABLE RULE DEFINITIONS THAT CAN BE DEFINED:
+# ------------------------------------------------------------------------
+
+# ---------------------------
+# Issue Policy Configuration:
+# ---------------------------
+# add_label_on_failure            : Add custom label to issues that fail git-enforcer check
+# title_must_contain              : Require issue title to contain a specific pattern
+# title_must_not_contain          : Require issue to NOT contain a specific pattern in title
+# title_must_be_prefixed          : Require text prefix to all issue titles
+# title_must_be_suffixed          : Require text suffix to all issue titles
+# validate_label_population       : Require labels to be populated on all issues
+# validate_assignee_population    : Require assignees to be added to all issues
+# milestone_required              : Require all issues to be assigned a milestone
+#
+# ---------------------------------
+# Pull-Request Policy Configuration:
+# ---------------------------------
+# approvals                       : Require N no. of approvers to pass status check
+# title_must_contain              : Pattern match on title to pass status check
+# title_must_not_contain          : Pattern match to not contain in title 
+# title_must_be_prefixed          : Require title prefix to pass status check
+# title_must_be_suffixed          : Require title suffix to pass status check
+# commits_must_be_prefixed        : Require commit prefix to pass status check
+# commits_must_be_suffixed        : Require commit suffix to pass status check
+
 #############################################################################
 
-# Here is an example git-enforcer policy:
-# All settings can be saved, but toggling the enabled flag will conditionally
-# shut them off 1 by 1.
+# Here is an example git-enforcer policy. A more detailed policy guide can be
+# found within the GitHub readme.
 git-enforcer:
   labels:
+    add_label_on_failure:
+      color: "FFA500"
+      name: "Issue Failure"
     title_must_contain:
-      enabled: true
       pattern: null
     title_must_not_contain:
-      enabled: true
       pattern: null
     title_must_be_prefixed:
-      enabled: true
       prefix: "[GIT-ENFORCE]"
     title_must_be_suffixed:
-      enabled: true
       suffix: SUFFIX
-    commits_must_be_prefixed:
-      enabled: true
-      prefix: null
-    commits_must_be_suffixed:
-      enabled: true
-      suffix: null
     validate_label_population:
-      enabled: true
       message: "Don't create issues with no labels!"
+    validate_assignee_population:
+      message: "Remember to choose at least one assignee to this issue!"
+    milestone_required:
+      message: "A milestone is required to be selected when making a new issue"
+      required_milestone_name: null
   pull_requests:
     approvals:
-      enabled: true
       number: 0
     title_must_contain:
-      enabled: true
       pattern: null
     title_must_not_contain:
-      enabled: true
       pattern: null
     title_must_be_prefixed:
-      enabled: true
       prefix: null
-    title_must_be_suffixed:
-      enabled: true
       suffix: null
     commits_must_be_prefixed:
-      enabled: true
       prefix: null
     commits_must_be_suffixed:
-      enabled: true
       suffix: null
+
 ```
 
 
