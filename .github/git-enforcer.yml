@@ -11,14 +11,30 @@
 # ------------------------------------------------------------------------
 # BELOW IS THE LIST OF AVAILABLE RULE DEFINITIONS THAT CAN BE DEFINED:
 # ------------------------------------------------------------------------
-# approvals: Any integer value that represents the no. of required approvers.
-# title_must_contain: Regex rule that needs to contain string, pipe delimiter
-# title_must_not_contain: Regex rule that must not contain string, pipe delimiter
-# title_must_be_prefixed: Prefix requirement for PR title
-# title_must_be_suffixed: Suffix requirement for PR title
-# commit_must_be_prefixed: Prefix requirement for PR (individual commits)
-# commit_must_be_suffixed: Suffix requirement for PR (individual commits)
-# validate_label_population: Ensures that labels must be added to an opened issue
+
+# ---------------------------
+# Issue Policy Configuration:
+# ---------------------------
+# add_label_on_failure            : Add custom label to issues that fail git-enforcer check
+# title_must_contain              : Require issue title to contain a specific pattern
+# title_must_not_contain          : Require issue to NOT contain a specific pattern in title
+# title_must_be_prefixed          : Require text prefix to all issue titles
+# title_must_be_suffixed          : Require text suffix to all issue titles
+# validate_label_population       : Require labels to be populated on all issues
+# validate_assignee_population    : Require assignees to be added to all issues
+# milestone_required              : Require all issues to be assigned a milestone
+#
+# ---------------------------------
+# Pull-Request Policy Configuration:
+# ---------------------------------
+# approvals                       : Require N no. of approvers to pass status check
+# title_must_contain              : Pattern match on title to pass status check
+# title_must_not_contain          : Pattern match to not contain in title 
+# title_must_be_prefixed          : Require title prefix to pass status check
+# title_must_be_suffixed          : Require title suffix to pass status check
+# commits_must_be_prefixed        : Require commit prefix to pass status check
+# commits_must_be_suffixed        : Require commit suffix to pass status check
+
 #############################################################################
 
 # Here is an example git-enforcer policy. A more detailed policy guide can be
@@ -43,9 +59,6 @@ git-enforcer:
     milestone_required:
       message: "A milestone is required to be selected when making a new issue"
       required_milestone_name: null
-    project_required:
-      message: "A project is required to be selected when making a new issue"
-      required_project_name: null
   pull_requests:
     approvals:
       number: 0
