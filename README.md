@@ -17,6 +17,30 @@
 
 [Inspired by Justin Law @jusx](https://github.com/jusx)
 
+
+_Table Last Updated: 5/13/2018_ (More detailed progress board can [be found here](https://waffle.io/Schachte/Git-Enforcer))
+
+| Priority Items In Construction | ETA | Completed | 
+| ------------- |:-------------: | :-------------: |
+| Issue title prefix/suffix requirements |  05/15 | ✓ |
+| Issue required assignee check |  05/15 | ✓ |
+| Issue required milestone check |  05/15 | ✓ |
+| Issue required label assignment  |  05/15 | ✓ |
+| Issue required milestone check |  05/15 | ✓ |
+| Issue required REGEX on title |  05/14 |  |
+| Improving, Testing & Refactoring |  05/15 |  |
+| Fully Issue Analysis Support      |  05/19 | |
+| Pull Request Prefix/Suffix Requirement with Status Check      |  05/19 | |
+| Pull Request Contains REGEX in Title with Status Check      |  05/21 | |
+| Pull Request Contains REGEX in Body with Status Check      |  05/21 | |
+| Pull Request Contains Required Assignee Status Check |  05/22 | |
+| Pull Request Contains Required Project Status Check |  05/22 | |
+| Pull Request Contains Required Milestone Status Check |  05/24 | |
+| Sending reminder notifications to requested reviewers to do a code review | 05/26 | |
+| Requiring issue number regex existence in PR body | 05/26 | |
+| Providing instructions on instantly rolling your own server to run bot | 05/26 | |
+
+
 #### Table of Contents: 
 
 - [Example Issue Validation Analysis](#example-issue-validation-analysis)
@@ -130,24 +154,8 @@ git-enforcer:
 
 ```
 
-
-## Current Roadmap
-- Validating structure of pull request titles (prefix/suffix)
-  - i.e (ENFORCR-45: Adding webhooks for author notifications)
-- Validating structure of individual commit messages (prefix/suffix)
-  - i.e (ENFORCR-45: Fixing bug in travis build)
-  - i.e (Fixing bug in travis build (#214))
-- Sending reminder notifications to requested reviewers to do a code review
-- Validating the number of approvals to enable mergability
-- Adding SMS config via Twilio API for customizable webhooks
-- Roll-Your-Own capabilities
-- Verifying Milestones were Attached to PR
-- Verifying Issue Number was Linked in PR
-- Kick off Travis.CI builds
-- Add labels for stale PR's 
-- Sending reminders with parse and PB-Scheduler
  
-## Setup
+## Setup Local Environment
 
 ```sh
 # Install dependencies
@@ -156,3 +164,5 @@ npm install
 # Run the bot
 npm start
 ```
+
+Check out `smee` to proxy requests to local environment, local tunnel or NGINX
