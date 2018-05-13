@@ -42,8 +42,8 @@
 git-enforcer:
   labels:
     add_label_on_failure:
-      color: "FFA500"
-      name: "Issue Failure"
+      color: "42f49b"
+      name: "Issue Failed Status Check"
     title_must_contain:
       pattern: null
     title_must_not_contain:
@@ -53,11 +53,11 @@ git-enforcer:
     title_must_be_suffixed:
       suffix: null
     validate_label_population:
-      message: "All issues require a label!"
+      message: "Don't create issues with no labels!"
     validate_assignee_population:
-      message: null
+      message: "Remember to choose at least one assignee to this issue!"
     milestone_required:
-      message: null
+      message: "A milestone is required to be selected when making a new issue"
       required_milestone_name: null
   pull_requests:
     approvals:
