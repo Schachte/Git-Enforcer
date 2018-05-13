@@ -13,10 +13,21 @@
 ![](https://img.shields.io/badge/GitEnforcer-v0.0.1-green.svg)
 [![Waffle.io - Columns and their card count](https://badge.waffle.io/Schachte/Git-Enforcer.svg?columns=all)](https://waffle.io/Schachte/Git-Enforcer)
 
-> GitHub bot for validating user-defined pull request structure, ensuring approval requests don't go stale, validating issues follow a specific structure, sending SMS alerts on PR status checks, customizing labels, and more! 
+> Git Enforcer is an open-source linter bot to faciliate collaboration efforts. Git Enforcer validates user-defined pull request structure, ensures approval requests don't go stale, validates issues follow a specific format, sends SMS alerts on PR status checks, allows for label customizability & more!
 
 [Inspired by Justin Law @jusx](https://github.com/jusx)
 
+#### Table of Contents: 
+
+- [Priority Roadmap & Progress Updates](#priority-roadmap)
+- [Example Issue Validation Analysis](#example-issue-validation-analysis)
+- [Issues Validation Support](#issues-validation-support)
+- [Pull Request Validation Support](#pull-request-validation-support)
+- [Example Configuration .yml](#example-configuration-yml)
+- [Setup](#setup-local-environment)
+
+
+## Priority Roadmap
 
 _Table Last Updated: 5/13/2018_ (More detailed progress board can [be found here](https://waffle.io/Schachte/Git-Enforcer))
 
@@ -39,16 +50,6 @@ _Table Last Updated: 5/13/2018_ (More detailed progress board can [be found here
 | Sending reminder notifications to requested reviewers to do a code review | 05/26 | |
 | Requiring issue number regex existence in PR body | 05/26 | |
 | Providing instructions on instantly rolling your own server to run bot | 05/26 | |
-
-
-#### Table of Contents: 
-
-- [Example Issue Validation Analysis](#example-issue-validation-analysis)
-- [Issues Validation Support](#issues-validation-support)
-- [Pull Request Validation Support](#pull-request-validation-support)
-- [Example Configuration .yml](#example-configuration-yml)
-- [Current Roadmap](#current-roadmap)
-- [Setup](#setup)
 
 ## Example Issue Validation Analysis
 ![](https://i.imgur.com/Glqiyrv.png)
