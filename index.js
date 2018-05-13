@@ -11,21 +11,16 @@ let prEvents = [
   'pull_request.synchronize'
 ]
 
-let issueEvents = [
-  'issues.renamed',
-  'issues.opened'
-]
+let issueEvents = ['issues.renamed', 'issues.opened']
 
-module.exports = (robot) => {
-/** Pull Requests */
-  robot.on(
-    prEvents,
-    (context) => { Handler.handlePullRequestEvents(context) }
-  )
+module.exports = robot => {
+  /** Pull Requests */
+  robot.on(prEvents, context => {
+    Handler.handlePullRequestEvents(context)
+  })
 
-/** Issues */
-  robot.on(
-    issueEvents,
-    (context) => { Handler.handleIssueEvents(context) }
-  )
+  /** Issues */
+  robot.on(issueEvents, context => {
+    Handler.handleIssueEvents(context)
+  })
 }
