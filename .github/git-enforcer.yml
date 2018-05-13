@@ -53,11 +53,11 @@ git-enforcer:
     title_must_be_suffixed:
       suffix: null
     validate_label_population:
-      message: "Don't create issues with no labels!"
+      message: "Please remember to add labels to all new issues on Git-Enforcer."
     validate_assignee_population:
-      message: "Remember to choose at least one assignee to this issue!"
+      message: null
     milestone_required:
-      message: "A milestone is required to be selected when making a new issue"
+      message: null
       required_milestone_name: null
   pull_requests:
     approvals:
