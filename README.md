@@ -13,7 +13,9 @@
 ![](https://img.shields.io/badge/GitEnforcer-v0.0.1-green.svg)
 [![Waffle.io - Columns and their card count](https://badge.waffle.io/Schachte/Git-Enforcer.svg?columns=all)](https://waffle.io/Schachte/Git-Enforcer)
 
-> GitHub bot for validating user-defined pull request structure, ensuring approval requests don't go stale, validating issues follow a specific structure, sending SMS alerts on PR status checks, customizing labels, and more!
+> GitHub bot for validating user-defined pull request structure, ensuring approval requests don't go stale, validating issues follow a specific structure, sending SMS alerts on PR status checks, customizing labels, and more! 
+
+[Inspired by Justin Law @jusx](https://github.com/jusx)
 
 #### Table of Contents: 
 
