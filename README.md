@@ -12,6 +12,8 @@
 
 ![](https://img.shields.io/badge/GitEnforcer-v0.0.1-green.svg)
 [![Waffle.io - Columns and their card count](https://badge.waffle.io/Schachte/Git-Enforcer.svg?columns=all)](https://waffle.io/Schachte/Git-Enforcer)
+![https://github.com/Schachte/Git-Enforcer/issues](https://img.shields.io/badge/%E2%9C%93-Accepting%20Pull%20Requests-ff69b4.svg)
+![](https://img.shields.io/github/stars/schachte/git-enforcer.svg?style=social&label=Stars)
 
 > Git Enforcer is an open-source linter bot to faciliate collaboration efforts. Git Enforcer validates user-defined pull request structure, ensures approval requests don't go stale, validates issues follow a specific format, sends SMS alerts on PR status checks, allows for label customizability & more!
 
