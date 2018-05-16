@@ -109,7 +109,7 @@ test('context loads the proper yml config', () => {
   })
 })
 
-test('context throws error when config cannot be properly found in repo', () => {
+test('context throws error when config cannot be properly found in repo', async () => {
   let context = {
     repo: jest.fn().mockReturnValue({
       repo: '',
@@ -129,7 +129,7 @@ test('context throws error when config cannot be properly found in repo', () => 
   }
 
   try {
-    Config.handleCurrentInstanceContext(context)
+    await Config.handleCurrentInstanceContext(context)
   } catch (e) {
     expect(e.message).toMatch(Config.GITHUB_RETRIEVAL_ERR)
   }
