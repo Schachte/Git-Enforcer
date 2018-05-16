@@ -2,13 +2,11 @@
                     ToDo, Tech-Debt & Shit
 --------------------------------------------------------------
 
-☐ Need to disable the way that enable is used from the config  @timestamp(2018-05-11 15:35)
+✔ Need to disable the way that enable is used from the config  @timestamp(2018-05-11 15:35) @done (2018-5-13 11:40:29)
     ✔ Update the YML config to remove the enabled flag @timestamp(2018-05-11 15:43) @done(2018-05-11 15:43)
     ✔ Update the issue handler class to removed enabled references @timestamp(2018-05-11 15:43) @done(2018-05-11 16:11)
-☐ Add better error handling to process valid YML config within the loader class @timestamp(2018-05-11 15:47)
-☐ Add the ability to load defaults in the config to better protect against failures @timestamp(2018-05-11 15:47)
-☐ Need to remove the project stuff from the config  @timestamp(2018-05-11 15:35)
-☐ Need to add unit and integration tests for the config as well as the actual issues @timestamp(2018-05-11 15:36)
+✔ Add the ability to load defaults in the config to better protect against failures @timestamp(2018-05-11 15:47) @done (2018-5-13 11:40:41)
+✔ Need to remove the project stuff from the config  @timestamp(2018-05-11 15:35) @done (2018-5-13 11:40:43)
 
 --------------------------------------------------------------
                 Things that need to be tested
@@ -18,13 +16,13 @@
 
 Configuration:
   handleCurrentInstanceContext
-  ☐ Add check for null context @timestamp(2018-05-11 16:13)
-  ☐ Add check to see if the requested file exists within the user repo @timestamp(2018-05-11 16:13)
-  ☐ Test to ensure that a new instance of the Configuration class was created @timestamp(2018-05-11 16:14)
-  ☐ Test to ensure the class was instantiated with a valid settings object @timestamp(2018-05-11 16:15)
-  ☐ Test to check that the constants are set correctly within the class @timestamp(2018-05-11 16:15)
-  ☐ Test to ensure an error is thrown with the settings is undefined @timestamp(2018-05-11 16:16)
-  ☐ Test to ensure the YML file can be loaded properly and throws otherwise @timestamp(2018-05-11 16:16)
+  ✔ Add check for null context @timestamp(2018-05-11 16:13) @done (2018-5-15 18:13:04)
+  ✔ Add check to see if the requested file exists within the user repo @timestamp(2018-05-11 16:13) @done (2018-5-15 18:13:01)
+  ✔ Test to ensure that a new instance of the Configuration class was created @timestamp(2018-05-11 16:14) @done (2018-5-15 18:13:01)
+  ✔ Test to ensure the class was instantiated with a valid settings object @timestamp(2018-05-11 16:15) @done (2018-5-15 18:13:00)
+  ✔ Test to check that the constants are set correctly within the class @timestamp(2018-05-11 16:15) @done (2018-5-15 18:12:59)
+  ✔ Test to ensure an error is thrown with the settings is undefined @timestamp(2018-05-11 16:16) @done (2018-5-15 18:12:59)
+  ✔ Test to ensure the YML file can be loaded properly and throws otherwise @timestamp(2018-05-11 16:16) @done (2018-5-15 18:12:58)
 
   util
   ☐ Test to ensure that the issue message interpolates input string correctly @timestamp(2018-05-11 16:17)
